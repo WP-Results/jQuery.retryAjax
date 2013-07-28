@@ -14,10 +14,10 @@ Overload method for $.ajax that provides the ability to automatically try the re
 		url: DESTINATION,
 		timeout: 5000,
 		retryLimit: 1,
-		success: function() {
+		done: function() {
 			alert("It worked!");
 		}, 
-		error: function() {
+		fail: function() {
 			// fires after the last try is unsuccessful
 		}
 	});
